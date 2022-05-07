@@ -14,27 +14,29 @@ gramatica = {
 terminal = ['ant', 'all', 'big', 'bus', 'boss', 'e', 'cat', 'cow']
 noTerminal = [rule for rule in gramatica if '*' not in rule]
 
-primeros = {
-
+setprimeros = {
+    key: {} for key in gramatica if '*' not in key
 }
 
 
+string = 'abcede'
+strigncopy = string.replace('f', '')
+print(strigncopy)
 
-def primeros(rule):
-    pos = 0
-    for rule in gramatica:
-        # print(gramatica[rule].split(' '))
-        for word in gramatica[rule].split(' '):
-            if word in terminal:
-                primeros[rule] = 
-                continue
-            else:
-                continue
+# #GENERA LOS PRIMEROS DE LA GRAMATICA
+# def primeros(rule: str):
+#     symbol = rule.split(' ')
+    
 
 
 
+    
 
-# PROGRAMA MAIN
-rule = [rule for rule in gramatica]
-for symbol in rule:
-    primeros(gramatica[rule])
+
+
+
+# # PROGRAMA MAIN LEE LA GRAMATICA
+# rule = [rule for rule in gramatica]
+
+# for symbol in rule:
+#     setprimeros[symbol.replace()] primeros(gramatica[symbol])
