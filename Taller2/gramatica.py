@@ -18,14 +18,12 @@ setprimeros = {
     key: {} for key in gramatica if '*' not in key
 }
 
-
-string = 'abcede'
-strigncopy = string.replace('f', '')
-print(strigncopy)
-
-# #GENERA LOS PRIMEROS DE LA GRAMATICA
-# def primeros(rule: str):
-#     symbol = rule.split(' ')
+#GENERA LOS PRIMEROS DE LA GRAMATICA
+def primeros(rule: str):
+    symbol = rule.split(' ')
+    if symbol[0] in terminal:
+        return symbol[0]
+    elif symbol[0] = 
     
 
 
@@ -35,8 +33,8 @@ print(strigncopy)
 
 
 
-# # PROGRAMA MAIN LEE LA GRAMATICA
-# rule = [rule for rule in gramatica]
+# PROGRAMA MAIN LEE LA GRAMATICA
+rule = [rule for rule in gramatica]
 
-# for symbol in rule:
-#     setprimeros[symbol.replace()] primeros(gramatica[symbol])
+for symbol in rule:
+    setprimeros[symbol.replace('*', '')].add(primeros(gramatica[symbol]))
